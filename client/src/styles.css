@@ -1,0 +1,42 @@
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pad {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.pad:active {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+.red { background: #ff4b5c; }
+.blue { background: #4b7bff; }
+.green { background: #4bff88; }
+.yellow { background: #ffd84b; }
+
+.login-card {
+  margin-top: 150px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
