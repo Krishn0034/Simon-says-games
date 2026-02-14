@@ -1,0 +1,19 @@
+{
+  "name": "simon-says-games",
+  "version": "1.0.0",
+  "description": "Classic Simon Says memory game - Full Stack Web Application",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["simon-says", "game", "react", "nodejs", "mongodb"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
